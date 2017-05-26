@@ -1,0 +1,11 @@
+window.ssd headerbar.titlebar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-height: 0;
+}
+
+window.ssd headerbar.titlebar button.titlebutton {
+    padding: 0px;
+    min-height: 0;
+    min-width: 0;
+}
