@@ -12,8 +12,8 @@ local options = require 'mp.options'
 -- Options
 local o = {
     -- Default key bindings
-    key_oneshot = "Shift+TAB",
-    key_toggle = "TAB",
+    key_oneshot = "i",
+    key_toggle = "I",
     key_page_1 = "1",
     key_page_2 = "2",
     key_page_3 = "3",

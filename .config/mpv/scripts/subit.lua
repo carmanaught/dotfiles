@@ -17,7 +17,7 @@ local utils = require 'mp.utils'
 local options = require 'mp.options'
 
 o = {
-    key = "Ctrl+Shift+d",
+    key = "d",
     path = "subliminal",    -- absolute path to subliminal if not on PATH
     languages = "en", -- list of IETF languages to search
     forceutf8 = true,       -- Force subtitles to be saved as utf-8
