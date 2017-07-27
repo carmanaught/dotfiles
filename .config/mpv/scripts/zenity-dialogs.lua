@@ -14,20 +14,21 @@
 -- by specifying script bindings below or in input.conf
 -- 
 utils = require "mp.utils"
-require "mp.options"
 
+-- Set options
+require "mp.options"
 local opt = {
     -- Standard keybindings
-    addFiles = "Ctrl+f"
-    addFolder = "Ctrl+g"
-    appendFiles = "Ctrl+Shift+f"
-    appendFolder = "Ctrl+Shift+g"
-    addSubtitle = "F"
+    addFiles = "Ctrl+f",
+    addFolder = "Ctrl+g",
+    appendFiles = "Ctrl+Shift+f",
+    appendFolder = "Ctrl+Shift+g",
+    addSubtitle = "F",
     -- These bindings default to nil
-    addURL = nil
-    openURL = nil
-    openPlaylist = nil
-    addAudio = nil
+    addURL = nil,
+    openURL = nil,
+    openPlaylist = nil,
+    addAudio = nil,
 }
 read_options(opt)
 
