@@ -3,7 +3,7 @@ local settings = {
   linux_over_windows = nil,
 
   --path where you want to save playlists, notice trailing \ or /. Do not use shortcuts like ~ or $HOME
-  playlist_savepath = "/home/anon/Documents/"
+  playlist_savepath = "/home/anon/Documents/",
 
   --osd when navigating in seconds
   osd_duration_seconds = 10,

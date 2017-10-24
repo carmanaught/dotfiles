@@ -9,7 +9,7 @@
  * - Reasonably well behaved/integrated considering it's an external application.
  * - Configurable options for some values (changes visually in menu too)
  *
- * Requirements:
+ * Setup/Requirements:
  * - Check https://github.com/carmanaught/mpvcontextmenu for further setup instructions
  *
  * 2017-02-02 - Version 0.1 - Initial version (avih)
@@ -190,9 +190,12 @@ local function doMenu(menuList, menuName, x, y, menuPaths, menuIndexes)
     -- cause problems
     if (stopCreate == true) then do return end end
     
+    -- Put all the arg values into a pipe-separated list to make it easier to pass to the
+    -- interpreter of choice (due to max arg limit) and replace pipe characters in any
+    -- arguments with a dash, just in case.
     local argList = args[1]
     for i = 2, #args do
-        argList = argList .. "|" .. args[i]
+        argList = argList .. "|" .. string.gsub(args[i], "|", "-")
     end
     
     -- We use the chosen menu builder with the interpreter and menuscript tables as the key
@@ -235,7 +238,7 @@ local function doMenu(menuList, menuName, x, y, menuPaths, menuIndexes)
     
     -- Run the command accessed by the menu name and menu item index return values
     if (type(menuItem[4]) == "string") then
-        mp.command(menuItem[4])
+        if not (menuItem[4] == "") then mp.command(menuItem[4]) end
     else
         menuItem[4]()
     end
