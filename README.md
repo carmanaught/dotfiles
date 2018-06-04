@@ -1,3 +1,5 @@
+DEPRECATED: This repository has been deprecated and moved to https://gitlab.com/carmanaught/dotfiles
+
 # dotfiles
 Public copies of some of my configs/dotfiles for reference.
 
